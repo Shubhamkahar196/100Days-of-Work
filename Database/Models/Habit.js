@@ -19,3 +19,7 @@ const habitValidator = z.object({
     consistency: z.array(z.date()),
     progress: z.array(z.number())
 });
+
+const Habit = mongoose.model('Habit',habitSchema);
+
+export {Habit,habitValidator};
