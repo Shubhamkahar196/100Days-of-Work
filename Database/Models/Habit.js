@@ -12,3 +12,10 @@ const habitSchema = new mongoose.Schema({
     progress: [{type: Number, default: 0}]  
 });
 
+const habitValidator = z.object({
+    title: z.string().min(3).max(50),
+    description: z.string.min(3).max(200),
+    completed: z.boolean(),
+    consistency: z.array(z.date()),
+    progress: z.array(z.number())
+});
