@@ -2,7 +2,7 @@
 import mongoose from 'mongoose'
 
 //import DB_Name from constrants
-import { DB_NAME } from '../constrants'
+import { DB_NAME } from '../constrants.js'
 
 const connectDB = async() =>{
     try{

@@ -1,8 +1,8 @@
 // Import the asyncHandler function
-import { asyncHandler } from "../utils/asyncHandler";
+import { asyncHandler } from "../utils/asyncHandler.js";
 
 // Import the User model
-import User from "../models/User";
+import  { User } from "../models/user.models.js";
 
 // Define a function to register a new user
 const registerUser = asyncHandler(async (req, res) => {

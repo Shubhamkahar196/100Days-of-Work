@@ -1,6 +1,6 @@
 // import dotenv 
 import dotenv from 'dotenv';
-
+import {app} from './app.js'
 // import connectDB form db folder index.js
 import connectDB from './db/index.js';
 
