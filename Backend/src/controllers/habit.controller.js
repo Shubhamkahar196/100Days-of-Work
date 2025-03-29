@@ -1,5 +1,5 @@
-import { asyncHandler } from "../utils/asyncHandler";
-import Habit from '../models/habit.models.js'
+import { asyncHandler } from "../utils/asyncHandler.js";
+import { Habit } from '../models/habit.models.js'
 
 // create habit
 const createHabit = asyncHandler(async (req,res)=>{
