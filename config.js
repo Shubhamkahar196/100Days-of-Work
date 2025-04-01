@@ -1,14 +1,24 @@
-// const JWT_USER_PASSWORD = process.env.JWT_ADMIN_PASSWORD;
-// const JWT_ADMIN_PASSWORD = process.env.JWT_USER_PASSWORD;
 
-// module.exports ={
-//     JWT_ADMIN_PASSWORD,
-//     JWT_USER_PASSWORD
+
+// import dotenv from 'dotenv';
+// dotenv.config();
+
+// const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
+
+// if (!JWT_SECRET_KEY) {
+//   throw new Error('JWT_SECRET_KEY environment variable is not set');
 // }
 
-const config = {
-    port: process.env.PORT,
-    JWT_SECRET_KEY: process.env.JWT_SECRET_KEY,
-  };
-  
-  export {config }
+
+// // const JWT_SECRET_KEY = process.env.JWT_SECRET_KEY;
+// // shubhsrs
+
+// export { JWT_SECRET_KEY}
+
+
+
+
+
+const JWT_SECRET_KEY = process.env.SECRET_KEY;
+
+export { JWT_SECRET_KEY}

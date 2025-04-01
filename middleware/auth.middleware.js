@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import config from '../config';
+import {JWT_SECRET_KEY} from '../config';
 import { userModel } from '../db';
 
 const authenticate = async (req, res, next) => {
@@ -8,7 +8,7 @@ const authenticate = async (req, res, next) => {
     if (!token) {
       throw new Error();
     }
-    const decoded = jwt.verify(token, config.JWT_SECRET_KEY);
+    const decoded = jwt.verify(token, JWT_SECRET_KEY);
     const user = await userModel.findById(decoded.id);
     if (!user) {
       throw new Error();

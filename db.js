@@ -1,5 +1,5 @@
 import mongoose from 'mongoose';
-console.log("Connection to the database");
+console.log("Mongoose connection is successfully connected");
 
 
 const Schema = mongoose.Schema;
