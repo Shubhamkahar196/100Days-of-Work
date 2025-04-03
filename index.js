@@ -1,5 +1,6 @@
 
 import 'dotenv/config'
+console.log("JWT KEY",process.env.JWT_SECRET_KEY)
 
 
 

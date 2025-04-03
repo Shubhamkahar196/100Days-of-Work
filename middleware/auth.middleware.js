@@ -1,5 +1,5 @@
 import jwt from 'jsonwebtoken';
-import {JWT_SECRET_KEY} from '../config';
+// import {JWT_SECRET_KEY} from '../config';
 import { userModel } from '../db';
 
 const authenticate = async (req, res, next) => {
