@@ -4,7 +4,7 @@ import jwt from 'jsonwebtoken';
 import bcrypt from 'bcrypt';
 import { z } from 'zod';
 import { userModel } from '../db.js'; // Import your user model
-import { JWT_SECRET_KEY } from '../config.js'
+// import { JWT_SECRET_KEY } from '../config.js'
 
 const userRouter = Router();
 
